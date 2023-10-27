@@ -3,29 +3,30 @@
   <head>
     <meta charset="UFT-8">
     <title>Navegador</title>
-    <meta property="titulo" content="Ejercicio navegador">
-    <meta property="description" content="Ejercicio 4">
-    <meta property="autor" content="Rosa del Río Angosto">
-    <meta property="type" content="navegador">
+    <meta property="og:titulo" content="Ejercicio navegador">
+    <meta property="og:description" content="Ejercicio 4">
+    <meta property="og:autor" content="Rosa del Río Angosto">
+    <meta property="og:type" content="navegador">
     <style>
-       .disabled{ 
-        cursor: not-allowed;
+      .disabled{
+        cursor:not-allowed;
         pointer-events: none;
-    }
+      }
     </style>
-     
   </head>
   <body>
     <nav>
         <span>Navbar</span>
         <a href="#">Home</a>
         <a href="#">Link</a>
-        <select name="dropdown" disabled>
+        <select name="dropdown">
                 <option value="Dropdown">Dropdown</option>
                 <option value="option1">Opcion 1</option>
                 <option value="option2">Opcion 2</option>
         </select>
-        <a href="#" class="disabled"> Disabled</a>
+
+        <!--No he sabido hacer bien para inhabilitar este atributo o por lo menos que se quede como la imagen, yo opino que será por el estilo-->
+        <a href="#" class="disabled">Disabled</a>
         <input type="text" id="url" placeholder="Search ">
         <button onclick="#">Search</button>
     </nav>
