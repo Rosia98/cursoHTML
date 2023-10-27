@@ -7,18 +7,23 @@
     <meta property="description" content="Ejercicio 4">
     <meta property="autor" content="Rosa del Río Angosto">
     <meta property="type" content="navegador">
+    style{
+      .disabled{ 
+        cursor: not-allowed;
+        pointer-events: none;
+    }
   </head>
   <body>
     <nav>
         <span>Navbar</span>
         <a href="#">Home</a>
-        <a href="#">Link</a>a>
+        <a href="#">Link</a>
         <select name="dropdown" disabled>
                 <option value="Dropdown">Dropdown</option>
                 <option value="option1">Opcion 1</option>
                 <option value="option2">Opcion 2</option>
         </select>
-        <a href="#" disabled> Disabled</a>
+        <a href="#" class="disabled"> Disabled</a>
         <input type="text" id="url" placeholder="Search ">
         <button onclick="#">Search</button>
     </nav>
